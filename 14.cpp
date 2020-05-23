@@ -109,7 +109,7 @@ int main()
 		cout<<"Average: "<<av(expProb,n)*intLen+intStart<<" ( "<<error*100<<"% error)"<<endl;
 		
 		error=abs(var(expProb,n)-var(theoretic,n))/var(theoretic,n);
-		cout<<"Variance: "<<var(expProb,n)<<" ( "<<error*100<<"% error)"<<endl;
+		cout<<"Variance: "<<var(expProb,n)*intLen/n<<" ( "<<error*100<<"% error)"<<endl;
 		
 		double chisqr=0;
 		i=0;
@@ -152,7 +152,7 @@ int main()
 		cout<<"Average: "<<av(expProb,n)*intLen+intStart<<" ( "<<error*100<<"% error)"<<endl;
 		
 		error=abs(var(expProb,n)-var(theoretic,n))/var(theoretic,n);
-		cout<<"Variance: "<<var(expProb,n)<<" ( "<<error*100<<"% error)"<<endl;
+		cout<<"Variance: "<<var(expProb,n)*intLen/n<<" ( "<<error*100<<"% error)"<<endl;
 		
 		chisqr=0;
 		i=0;
@@ -195,7 +195,7 @@ int main()
 		cout<<"Average: "<<av(expProb,n)*intLen+intStart<<" ( "<<error*100<<"% error)"<<endl;
 		
 		error=abs(var(expProb,n)-var(theoretic,n))/var(theoretic,n);
-		cout<<"Variance: "<<var(expProb,n)<<" ( "<<error*100<<"% error)"<<endl;
+		cout<<"Variance: "<<var(expProb,n)*intLen/n<<" ( "<<error*100<<"% error)"<<endl;
 		
 		chisqr=0;
 		i=0;
